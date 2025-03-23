@@ -6,10 +6,10 @@ import random
 URL = "https://api.hyperbolic.xyz/v1/chat/completions"
 HEADERS = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZGVuaWdiYWlzcmFlbEBnbWFpbC5jb20ifQ.H5wYZuY_m7ezMXUDf0acEUwQBjJ6Y9tWXB3dvq7VaK4"
+    "Authorization": "Bearer YOUR_API_KEY"
 }
 
-# List of 100 unique questions
+# List of 150 unique questions
 questions = [
     "What's the best way to learn programming?",
     "How does quantum computing work?",
@@ -109,7 +109,58 @@ questions = [
     "How does evolution work?",
     "What are some tips for reducing waste?",
     "How do I choose a good wine?",
-    "What’s the future of renewable energy?"
+    "What’s the future of renewable energy?",
+    "What is the capital of France?",
+    "What is the capital of France?",
+	"Who wrote Romeo and Juliet?",
+	"What is 7 × 8?",
+    "Define artificial intelligence.",
+	"What is the square root of 144?",
+	"Who painted the Mona Lisa?",
+	"What is the chemical symbol for gold?",
+	"Translate ‘hello’ into Spanish.",
+	"What year did the Titanic sink?",
+	"Who discovered gravity?",
+	"What is the boiling point of water in Celsius?",
+	"What is the powerhouse of the cell?",
+	"How many continents are there?",
+	"Who was the first person to walk on the moon?",
+	"What is the largest organ in the human body?",
+	"What is the capital of Japan?",
+	"How many bones are in the adult human body?",
+	"Who wrote 1984?",
+	"What is the first element on the periodic table?",
+	"How many sides does a hexagon have?",
+	"Who developed the theory of relativity?",
+	"What is the speed of light in a vacuum?",
+	"What is the longest river in the world?",
+	"Which planet is known as the Red Planet?",
+	"What is the currency of the United Kingdom?",
+	"How many time zones are there in the world?",
+	"Who invented the telephone?",
+	"What is the largest mammal on Earth?",
+	"What is the freezing point of water in Fahrenheit?",
+	"What is the smallest prime number?",
+	"Which element has the atomic number 6?",
+	"What does DNA stand for?",
+	"Who was the first president of the United States?",
+	"How many chambers does the human heart have?",
+	"What is the capital of Canada?",
+	"What is the square of 15?",
+	"What is the main gas in Earth’s atmosphere?",
+	"Who wrote Pride and Prejudice?",
+	"What is the process by which plants make their own food?",
+	"How many legs does a spider have?",
+	"What is the hardest naturally occurring mineral?",
+	"Who was the Greek god of war?",
+	"What is the SI unit of force?",
+	"Which ocean is the largest?",
+	"What is the longest bone in the human body?",
+	"What is 9 cubed?",
+	"What is the main ingredient in traditional Japanese miso soup?",
+	"Who was the first woman to win a Nobel Prize?",
+	"What is the main function of red blood cells?",
+	"How many grams are in a kilogram?"
 ]
 
 # Verify we have 100 questions
@@ -158,12 +209,12 @@ def run_chat_bot():
         answer = send_chat_request(question)
         print(f"Answer: {answer}")
         
-        # Random delay between 1-2 minutes (60-120 seconds)
-        delay = random.uniform(60, 120)
+        # Random delay between 1-10 seconds
+        delay = random.uniform(1, 10)
         print(f"Waiting {delay:.1f} seconds before next question...")
         time.sleep(delay)
     
-    print("\nCompleted 100 questions!")
+    print("\nCompleted 150 questions!")
 
 # Run the bot
 if __name__ == "__main__":
