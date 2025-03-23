@@ -7,10 +7,10 @@ This repository contains a simple automated chatbot built using the [Hyperbolic 
 * Check out their [official documentation](https://docs.hyperbolic.xyz) for more details.
 
 ## Features
-- Contains a list of 100 unique questions on diverse topics.
+- Contains a list of 150 unique questions on diverse topics.
 - Randomly selects and asks questions without repetition.
 - Integrates with the Hyperbolic Labs API to fetch answers.
-- Adds random delays (1-2 minutes) between questions to simulate natural pacing.
+- Adds random delays (1-10 seconds) between questions to simulate natural pacing.
 - Built with Python and the `requests` library.
 
 ## Prerequisites
@@ -25,7 +25,7 @@ This repository contains a simple automated chatbot built using the [Hyperbolic 
    ```
 2. **Clone the Repository**
    ```bash
-   git clone https://github.com/0xmoei/chatbot-app.git
+   git clone https://github.com/heiseaxy/Hyperspace.git
    cd chatbot-app
    ```
 3. **Install Dependencies**
